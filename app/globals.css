@@ -1,6 +1,33 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+@theme {
+  /* Custom Font Family */
+  --font-family-sans: Montserrat, sans-serif;
+
+  /* Custom Breakpoints */
+  --breakpoint-320: 320px;
+  --breakpoint-375: 375px;
+
+  /* Custom Colors - Green */
+  --color-green-dark: #1D5B43;
+  --color-green-light: #81FE95;
+
+  /* Custom Colors - Red */
+  --color-red: #FD5656;
+
+  /* Custom Colors - Yellow */
+  --color-yellow: #FFBB00;
+  --color-golden: #FDB056;
+
+  /* Custom Colors - Gray */
+  --color-gray-29: #232829; 
+  --color-gray-37: #313637;
+  --color-gray-91: #919191;
+  --color-gray-cd: #CDCDCD;
+  --color-gray-4e: #484D4E;
+  --color-gray-dc: #DCDCDC;
+}
 
 * {
   margin: 0;
@@ -9,10 +36,9 @@
 }
 
 body {
-  
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 .app {
@@ -20,6 +46,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 

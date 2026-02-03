@@ -1,21 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import { ScreenSize } from "@/types";
-import ScreenSelector from "@/components/ScreenSelector";
-import PricingContainer from "@/components/PricingContainer";
 import Header from "@/components/Header/Header";
 
 export default function Home() {
-  const [screenSize, setScreenSize] = useState<ScreenSize>("desktop");
-
   return (
-    <>
+    <div className={`app bg-gray-29`}>
       <Header />
-      <main className="app">
-        
-        
+      <main>
+        <h1>Выбери подходящий для себя <span className="text-golden">тариф</span></h1>
       </main>
-    </>
+    </div>
   );
 }
