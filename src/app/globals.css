@@ -1,6 +1,14 @@
-@import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Кастомные CSS переменные */
 @theme {
   /* Custom Font Family */
   --font-family-sans: Montserrat, sans-serif;
@@ -10,33 +18,21 @@
   --breakpoint-375: 375px;
 
   /* Custom Colors - Green */
-  --color-green-dark: #1D5B43;
-  --color-green-light: #81FE95;
+  --color-green-dark: #1d5b43;
+  --color-green-light: #81fe95;
 
   /* Custom Colors - Red */
-  --color-red: #FD5656;
+  --color-red: #fd5656;
 
   /* Custom Colors - Yellow */
-  --color-yellow: #FFBB00;
-  --color-golden: #FDB056;
+  --color-yellow: #ffbb00;
+  --color-golden: #fdb056;
 
   /* Custom Colors - Gray */
-  --color-gray-29: #232829; 
+  --color-gray-29: #232829;
   --color-gray-37: #313637;
   --color-gray-91: #919191;
-  --color-gray-cd: #CDCDCD;
-  --color-gray-4e: #484D4E;
-  --color-gray-dc: #DCDCDC;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-gray-cd: #cdcdcd;
+  --color-gray-4e: #484d4e;
+  --color-gray-dc: #dcdcdc;
 }

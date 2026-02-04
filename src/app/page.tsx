@@ -1,10 +1,10 @@
 "use client";
 
-import Header from "@/src/components/Header/Header";
+import Header from "@/components/Header/Header";
 
 export default function Home() {
   return (
-    <div className={`app bg-gray-29`}>
+    <div className="bg-gray-29 min-h-screen">
       <Header />
       <main>
         <h1>
